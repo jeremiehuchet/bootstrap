@@ -7,7 +7,6 @@
 // GLOBAL VALUES
 // --------------------------------------------------
 
-
 // Grays
 // -------------------------
 @black:                 #000;
@@ -17,6 +16,15 @@
 @grayLight:             #999;
 @grayLighter:           #eee;
 @white:                 #fff;
+
+// Greens
+// -------------------------
+@greenDarker:            #13391a;
+@greenDark:              #194d23;
+@green:                  #236a30;
+@greenLight:             #3c944d;
+@greenLighter:           #eaffea;
+@lightBg:                #ecebf0;
 
 
 // Accent colors
@@ -33,7 +41,7 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white;
+@bodyBackground:        #ecebf0; //@white;
 @textColor:             @grayDark;
 
 
@@ -146,11 +154,11 @@
 // Navbar
 // -------------------------
 @navbarHeight:                    40px;
-@navbarBackground:                @grayDarker;
-@navbarBackgroundHighlight:       @grayDark;
+@navbarBackground:                @greenDark;
+@navbarBackgroundHighlight:       @green;
 
-@navbarText:                      @grayLight;
-@navbarLinkColor:                 @grayLight;
+@navbarText:                      @greenLight;
+@navbarLinkColor:                 lighten(@green, 30%);
 @navbarLinkColorHover:            @white;
 @navbarLinkColorActive:           @navbarLinkColorHover;
 @navbarLinkBackgroundHover:       transparent;
@@ -165,7 +173,7 @@
 
 // Hero unit
 // -------------------------
-@heroUnitBackground:              @grayLighter;
+@heroUnitBackground:              @lightBg;
 @heroUnitHeadingColor:            inherit;
 @heroUnitLeadColor:               inherit;
 
