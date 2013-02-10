@@ -6,6 +6,13 @@
 // Global values
 // --------------------------------------------------
 
+// Custom colors
+@mredDarker:		#450308;
+@mredDark:		#6a0406;
+@mred:			#700407;
+@mredLight:		#a0070b;
+@mredLighter:		#e9d2d3;
+
 
 // Grays
 // -------------------------
@@ -20,8 +27,8 @@
 
 // Accent colors
 // -------------------------
-@blue:                  #049cdb;
-@blueDark:              #0064cd;
+@blue:                  @mred; // #049cdb;
+@blueDark:              @mredDark; // #0064cd;
 @green:                 #46a546;
 @red:                   #9d261d;
 @yellow:                #ffc40d;
@@ -32,13 +39,13 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white;
+@bodyBackground:        #f3f3f3;// @white;
 @textColor:             @grayDark;
 
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @mredLight; // #08c;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -48,9 +55,9 @@
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          14px;
+@baseFontSize:          13px; // 14px;
 @baseFontFamily:        @sansFontFamily;
-@baseLineHeight:        20px;
+@baseLineHeight:        18px; // 20px;
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
@@ -88,8 +95,8 @@
 @btnBackgroundHighlight:            darken(@white, 10%);
 @btnBorder:                         #bbb;
 
-@btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+@btnPrimaryBackground:              @mredLight; // @linkColor;
+@btnPrimaryBackgroundHighlight:     @mred; // spin(@btnPrimaryBackground, 20%);
 
 @btnInfoBackground:                 #5bc0de;
 @btnInfoBackgroundHighlight:        #2f96b4;
@@ -242,8 +249,8 @@
 @successBackground:       #dff0d8;
 @successBorder:           darken(spin(@successBackground, -10), 5%);
 
-@infoText:                #3a87ad;
-@infoBackground:          #d9edf7;
+@infoText:                @mredDark; //#3a87ad;
+@infoBackground:          @mredLighter; //#d9edf7;
 @infoBorder:              darken(spin(@infoBackground, -10), 7%);
 
 

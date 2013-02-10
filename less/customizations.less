@@ -1,0 +1,33 @@
+
+// v2.2.2 progress-bars.less
+.progress-chili .bar {
+  #gradient > .vertical(@mredLight, @mred);
+}
+.progress-chili.progress-striped .bar {
+  #gradient > .striped(@mredDark);
+}
+
+.header {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  #gradient > .vertical(@mredLight, @mred);
+  color: @white;
+}
+
+// v2.2.2 navbars.less
+.navbar .nav {
+  background-color: @mredDarker;
+  float: right;
+}
+.navbar .nav > li > a {
+  #gradient > .vertical(@mredLight, @mred);
+  margin-left: 1px;
+  color: @mredLighter;
+}
+.navbar .nav > li > a:hover {
+  #gradient > .vertical(@mredDark, @mred);
+}
+
