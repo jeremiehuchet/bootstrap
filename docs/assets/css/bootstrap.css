@@ -6038,6 +6038,10 @@ a.badge:hover {
   position: fixed;
 }
 
+.mred {
+  color: #700407;
+}
+
 h2 {
   font-size: 22.75px;
 }
