@@ -6038,6 +6038,14 @@ a.badge:hover {
   position: fixed;
 }
 
+h2 {
+  font-size: 22.75px;
+}
+
+h3 {
+  font-size: 19.5px;
+}
+
 .label-info-inverse,
 .badge-info-inverse {
   color: #6a0406;
