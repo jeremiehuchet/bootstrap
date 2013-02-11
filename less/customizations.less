@@ -6,10 +6,13 @@ h3 { font-size: @baseFontSize * 1.5; }
 // v2.2.2 labels-badges.less
 .label,
 .badge {
+  // Info
+  &-info              { background-color: @mred; }
+  &-info[href]        { background-color: darken(@mred, 10%); }
+
   // Info inverse
-  &-info-inverse              { color: @infoText; background-color: @white; }
+  &-info-inverse              { color: @mred; background-color: @white; }
   &-info-inverse[href]        { background-color: darken(@white, 10%); }
-  &-inverse[href]     { background-color: darken(@white, 10%); }
 }
 
 // v2.2.2 progress-bars.less

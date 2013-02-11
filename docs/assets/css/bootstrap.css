@@ -6046,19 +6046,24 @@ h3 {
   font-size: 19.5px;
 }
 
+.label-info,
+.badge-info {
+  background-color: #700407;
+}
+
+.label-info[href],
+.badge-info[href] {
+  background-color: #3f0204;
+}
+
 .label-info-inverse,
 .badge-info-inverse {
-  color: #6a0406;
+  color: #700407;
   background-color: #ffffff;
 }
 
 .label-info-inverse[href],
 .badge-info-inverse[href] {
-  background-color: #e6e6e6;
-}
-
-.label-inverse[href],
-.badge-inverse[href] {
   background-color: #e6e6e6;
 }
 
