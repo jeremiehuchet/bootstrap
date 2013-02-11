@@ -1,4 +1,13 @@
 
+// v2.2.2 labels-badges.less
+.label,
+.badge {
+  // Info inverse
+  &-info-inverse              { color: @infoText; background-color: @white; }
+  &-info-inverse[href]        { background-color: darken(@white, 10%); }
+  &-inverse[href]     { background-color: darken(@white, 10%); }
+}
+
 // v2.2.2 progress-bars.less
 .progress-chili .bar {
   #gradient > .vertical(@mredLight, @mred);

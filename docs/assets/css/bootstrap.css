@@ -6038,6 +6038,22 @@ a.badge:hover {
   position: fixed;
 }
 
+.label-info-inverse,
+.badge-info-inverse {
+  color: #6a0406;
+  background-color: #ffffff;
+}
+
+.label-info-inverse[href],
+.badge-info-inverse[href] {
+  background-color: #e6e6e6;
+}
+
+.label-inverse[href],
+.badge-inverse[href] {
+  background-color: #e6e6e6;
+}
+
 .progress-chili .bar {
   background-color: #8d0609;
   background-image: -moz-linear-gradient(top, #a0070b, #700407);
