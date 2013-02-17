@@ -18,6 +18,10 @@ h3 { font-size: @baseFontSize * 1.5; }
   // Info inverse
   &-info-inverse              { color: @mred; background-color: @white; }
   &-info-inverse[href]        { background-color: darken(@white, 10%); }
+
+  // Inverse inverse (dark gray on white)
+  &-white              { color: @grayDark; background-color: @white; }
+  &-white[href]        { background-color: darken(@grayDark, 10%); }
 }
 
 // v2.2.2 progress-bars.less
@@ -35,6 +39,16 @@ h3 { font-size: @baseFontSize * 1.5; }
 
 .footer {
   color: @mred;
+}
+.footer .btn {
+
+  background: transparent;
+  border: none;
+
+  &:hover {
+    color: @mred;
+    .border-radius(@baseBorderRadius);
+  }
 }
 
 // v2.2.2 navbars.less
