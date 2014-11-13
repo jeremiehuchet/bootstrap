@@ -1,0 +1,50 @@
+
+.label,
+.badge {
+
+  // default inverse
+  &-inverse              { color: #fff; background-color: @gray-dark; }
+  &-inverse[href]        { background-color: darken(#fff, 10%); }
+
+  // primary
+  &-primary              { color: #fff; background-color: @brand-primary; }
+  &-primary[href]        { background-color: darken(@brand-primary, 10%); }
+
+  // primary inverse
+  &-primary-inverse              { color: @brand-primary; background-color: #fff; }
+  &-primary-inverse[href]        { background-color: darken(#fff, 10%); }
+
+  // Inverse inverse (dark gray on white)
+  &-white              { color: @gray-dark; background-color: #fff; }
+  &-white[href]        { background-color: darken(@gray-dark, 10%); }
+}
+
+.progress-chili .bar {
+  #gradient > .vertical(@mred-light, @mred);
+}
+.progress-chili.progress-striped .bar {
+  #gradient > .striped(@mred-dark);
+}
+
+.header {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  color: @mred;
+}
+.footer .btn {
+
+  background: transparent;
+  border: none;
+  .box-shadow(none);
+
+/*
+  &:hover {
+    color: @mred;
+    border-radius(@border-radius-base);
+  }
+*/
+}
+
